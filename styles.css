@@ -1,3 +1,6 @@
+@import url(./styles/header.css);
+@import url(./styles/main.css);
+@import url(./styles/footer.css);
 :root {
     --background: #ececec; 
     --fontcolor: #1c1c1c;
@@ -11,61 +14,8 @@ body{
     font-weight: 400;
     font-size: 14px;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    margin: 1em 2.5em;
-    text-align: center;
-    align-items: center;
-}
-.nav-bar__logo{
-    width: 50%;
-}
-.nav-bar__items{
-    margin-right: 5em;
-}
-.nav-bar__links{
-    display: inline;
-    flex-direction: row;
-    padding-right: 1em;
-}
-.nav-bar__links:hover{
-    color: var(--click-color);
-    transition: ease-in-out 0.2s all;
-    border-left: 1px solid var(--fontcolor);
-}
 
 
 
-.footer{
-    background-color: var(--background-footer);
-    text-align: center;
-    padding: 1em;
-}
-.footer__logo{
-    width: 12%;
-}
-.container{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    margin: 0 2em;
-    
-}
-.container__about{
 
-}
-.about__title{
-    font-size: 16px;
-    color: var(--fontcolor-secundary);
-    padding: .5em 0 .5em 0;
-}
-.about__text{
-    font-size: 14px;
-    color: var(--click-color);
-    padding: .5em;
-}
-.about__logo{
-    width: 5%;
-    padding-right: .5em;
-}
 
