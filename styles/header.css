@@ -21,7 +21,6 @@
     transition: ease-in-out 0.2s all;
     border-left: 1px solid var(--fontcolor);
 }
-
 @media screen and (max-width: 448px){
     .header{
         display: block;

@@ -27,3 +27,19 @@
   .architecture__logo{
     width: 50%;
   }
+
+  @media screen and (max-width: 448px){
+    .swiper{
+      height: 250px;
+    }
+
+    .container__portfolio{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1em;
+    }
+    .achitecture__title{
+      text-align: center;
+    }
+    
+  }
