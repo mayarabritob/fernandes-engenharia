@@ -303,14 +303,14 @@
       margin: 0 1em 2em 1em;
     }
     .grid__image{
-      width: 300px;
+      width: 270px;
       height: auto;
       position: relative;
       right: 4em;
     }
     .relative{
       position: relative;
-      left: 1em;
+      right: 1em;
     }
     .grid__title{
       color: var(--background-footer);
