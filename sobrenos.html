@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
@@ -27,32 +29,15 @@
             </div>
         </section>
     </header>
-    <main>
-        <section class="banner">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                    <div class="swiper-slide"> <img src="./img/casa1.jpg"></div>
-                    <div class="swiper-slide"><img src="./img/casa2.jpg"></div>
-                    <div class="swiper-slide"><img src="./img/casa3.jpg"></div>
-                    <div class="swiper-slide"><img src="./img/casa4.jpg"></div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
-              </div>
+    <main class="form">
+        <section class="form__contact">
+            <h3>Fale com a gente: </h3>
+            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5567999619885" class="contact__wpp">
+                <img src="./img/whatsapp.png" class="contact__logo">Whatasapp</a>
+              
         </section>
-        <section class="container__portfolio">
-            <div class="portfolio__architecture">
-                <h2 class="achitecture__title">Design Moderno</h2>
-                <h2 class="achitecture__title">Infra, conforto e conveniência</h2>  
-                <h2 class="achitecture__title">Tecnologia para ambientes seguros e confortáveis</h2>
-            </div>
-            <div class="portfolio__architecture">
-                <img src="./img/engenheiro.png" class="architecture__logo">
-            </div>
-        </section>
+        <h2 class="form__title">Sobre nós</h2>
+        
 
 
     </main>
@@ -81,29 +66,5 @@
         </section>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-      
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-            autoplay: {
-            delay: 2500,
-          disableOnInteraction: false,
-            },
-           
-            pagination: {
-          el: ".swiper-pagination",
-          type: "progressbar",
-            },
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-      </script>
 </body>
 </html>

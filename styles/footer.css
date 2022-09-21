@@ -26,6 +26,9 @@
     width: 5%;
     padding-right: .5em;
 }
+.logo-socialmedia{
+    width: 7%;
+}
 @media screen and (max-width: 448px) {
     .footer{
         display: block;

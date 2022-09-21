@@ -13,6 +13,7 @@ body{
     font-family: var(--font-type);
     font-weight: 400;
     font-size: 14px;
+    cursor: default;
 }
 
 
