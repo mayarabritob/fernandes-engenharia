@@ -29,6 +29,7 @@
 .logo-socialmedia{
     width: 7%;
 }
+
 @media screen and (max-width: 448px) {
     .footer{
         display: block;
