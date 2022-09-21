@@ -38,10 +38,10 @@
         </section>
         <section class="portfolio">
             <h2 class="portfolio__title">Portfólio</h2>
-                <div class="container__row">
+                <div class="container__row" >
                     <div class="container__column">
-                      <img src="./portfolio/casa1.jpg" class="container__image">
-                      <img src="./portfolio/casa1-1.jpg" class="container__image">
+                      <img src="./portfolio/casa1.jpg" class="container__image" id="img">
+                      <img src="./portfolio/casa1-1.jpg" class="container__image" >
                       <img src="./portfolio/casa1-2.jpg" class="container__image">
                       <img src="./portfolio/casa1-3.jpg" class="container__image">
                     </div>
@@ -58,6 +58,11 @@
                         <img src="./portfolio/casa3-3.jpg" class="container__image">
                     </div>
                 </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
 
 
 
@@ -91,5 +96,24 @@
         </section>
 
     </footer>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("img");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>
