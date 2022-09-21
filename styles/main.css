@@ -206,6 +206,17 @@
       text-align: center;
       font-size: 30px;
     }
+    
+     /* PAGINA PORTFOLIO*/
+      
+    .container__image:hover, .container__image{
+      transition: none;
+      filter: none;
+    }
+    .modal-content {
+      width: 100%;
+    }
+    
 
     /* PÁGINA CONTATO */
     
@@ -215,9 +226,6 @@
     }
     .form__input{
       padding: .5em 6em; 
-    }
-    .modal-content {
-      width: 100%;
     }
     
   }
