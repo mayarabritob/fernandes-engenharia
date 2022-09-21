@@ -50,12 +50,9 @@
 
                 <textarea placeholder="Envie-nos sua dúvida!" class="form__input"></textarea>
 
-                <input type="submit" class="form__submit" onclick="Enviar();" value="Enviar"/>
+                <input type="submit" class="form__submit" onclick="check_form();" value="Enviar"/>
             </form>
         </section>
-
-
-
     </main>
     <footer class="footer">
         <img src="./img/LogoFooter.png" class="footer__logo">
@@ -84,5 +81,19 @@
         </section>
 
     </footer>
+    <script>
+        function check_form(){
+            var inputs = document.getElementsByClassName('form__input');
+            var len = inputs.length;
+            var valid = true;
+            for(var i=0; i < len; i++){
+                if (!inputs[i].value){ valid = false; }
+            }
+            if (!valid){
+                alert('Por favor preencha todos os campos.');
+                return false;
+            } else { return true; }
+            }
+    </script>
 </body>
 </html>
