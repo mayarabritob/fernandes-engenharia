@@ -310,7 +310,7 @@
     }
     .relative{
       position: relative;
-      right: 1em;
+      right: 0;
     }
     .grid__title{
       color: var(--background-footer);
@@ -318,14 +318,14 @@
       font-weight: 700;
       position: relative;
       right: 2.5em;
-      letter-spacing: 3px;  
+      letter-spacing: 1px;  
     }
     .bold{
       color: var(--click-color);
     }
     .grid__text{
-      text-align: left;
       font-size: 10px;
+      padding: 2px 0;
     }
     .about-us__bg{
       background-image: url(../img/sonhe.jpg);
@@ -352,7 +352,7 @@
     }
     .bg__text{
       color: var(--fontcolor-secundary);
-      font-size: 10px;
+      font-size: 9px;
       line-height: 1.5em;
       text-align: left;
       padding: 1em 0 0 1em;
