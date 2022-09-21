@@ -297,9 +297,6 @@
       border: none;
     }
     .grid__description{
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
       margin: 0 1em 2em 1em;
     }
     .grid__image{
@@ -313,49 +310,27 @@
       right: 0;
     }
     .grid__title{
-      color: var(--background-footer);
       font-size: 20px;
-      font-weight: 700;
-      position: relative;
       right: 2.5em;
-      letter-spacing: 1px;  
-    }
-    .bold{
-      color: var(--click-color);
+      letter-spacing: 1px;
+      padding: 5px 0;  
     }
     .grid__text{
       font-size: 10px;
       padding: 2px 0;
     }
     .about-us__bg{
-      background-image: url(../img/sonhe.jpg);
-      background-size: 100%;
       height: auto;
-      background-repeat: no-repeat;
     }
     .about-us__description{
-      position: relative;
       top: 1.5%;
       left: 5%;
-      padding: 1em;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      margin-right:52%;
-      background-color: #f1f1f166;
     }
     .bg__title{
       font-size: 12px;
-      font-weight: 700;
-      padding-left: 1em;
-      color: var(--fontcolor-secundary);
     }
     .bg__text{
-      color: var(--fontcolor-secundary);
       font-size: 9px;
-      line-height: 1.5em;
-      text-align: left;
-      padding: 1em 0 0 1em;
     }
     /* PÁGINA CONTATO */
     
@@ -366,6 +341,5 @@
     .form__input{
       padding: .5em 6em; 
     }
-    
     
   }
