@@ -63,11 +63,7 @@
                     <img class="modal-content" id="img01">
                     <div id="caption"></div>
                   </div>
-
-
-
         </section>
-
     </main>
     <footer class="footer">
         <img src="./img/LogoFooter.png" class="footer__logo">
@@ -96,24 +92,25 @@
         </section>
 
     </footer>
-
     <script>
-        var modal = document.getElementById("myModal");
-        var img = document.getElementById("img");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
+        let imagens= document.querySelectorAll('.container__image');
+        let modal = document.querySelector('.modal');
+        let modalImg = document.querySelector('#img01');
+        let btClose = document.querySelector('.close');
+        let srcVal="";
 
-        var span = document.getElementsByClassName("close")[0];
-
-
-        span.onclick = function() { 
-            modal.style.display = "none";
-        }
+            for(let i =0; i<imagens.length;i++){
+                imagens[i].addEventListener('click',function(){
+                    
+                    srcVal = imagens[i].getAttribute('src');
+                    modalImg.setAttribute('src', srcVal);
+                    modal.classList.toggle('modal-content');
+                });
+    
+            }
+            btClose.addEventListener('click', function(){
+                modal.classList.toggle('modal-content');
+            });
     </script>
 </body>
 </html>
