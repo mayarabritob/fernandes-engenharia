@@ -100,6 +100,9 @@
     animation-name: zoom;
     animation-duration: 0.6s;
   }
+  #img01{
+    width: 60%;
+  }
   @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
@@ -206,17 +209,17 @@
       text-align: center;
       font-size: 30px;
     }
-    
-     /* PAGINA PORTFOLIO*/
-      
+    /* PAGINA PORTFOLIO*/
     .container__image:hover, .container__image{
       transition: none;
       filter: none;
     }
     .modal-content {
       width: 100%;
+    }  
+    #img01{
+      width: 80%;
     }
-    
 
     /* PÁGINA CONTATO */
     
@@ -227,5 +230,6 @@
     .form__input{
       padding: .5em 6em; 
     }
+    
     
   }
