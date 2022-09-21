@@ -140,6 +140,38 @@
   color: var(--click-color);
   margin: 2em 0;
 }
+.grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 1px solid var(--background-footer);
+  padding-top: 2em;
+
+}
+.grid__description{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2em 10em;
+}
+.relative{
+  position: relative;
+  right: 10em;
+}
+.grid__title{
+  color: var(--background-footer);
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  right: 3.2em;
+  letter-spacing: 4px;  
+}
+.bold{
+  color: var(--click-color);
+}
+.grid__text{
+  text-align: left;
+  line-height: 1.7em;
+}
 .about-us__bg{
   background-image: url(../img/sonhe.jpg);
   background-size: 100%;
@@ -258,6 +290,72 @@
     }  
     #img01{
       width: 80%;
+    }
+
+    /* PAGINA SOBRE NOS */
+    .grid{
+      border: none;
+    }
+    .grid__description{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 1em 2em 1em;
+    }
+    .grid__image{
+      width: 300px;
+      height: auto;
+      position: relative;
+      right: 4em;
+    }
+    .relative{
+      position: relative;
+      left: 1em;
+    }
+    .grid__title{
+      color: var(--background-footer);
+      font-size: 20px;
+      font-weight: 700;
+      position: relative;
+      right: 2.5em;
+      letter-spacing: 3px;  
+    }
+    .bold{
+      color: var(--click-color);
+    }
+    .grid__text{
+      text-align: left;
+      font-size: 10px;
+    }
+    .about-us__bg{
+      background-image: url(../img/sonhe.jpg);
+      background-size: 100%;
+      height: auto;
+      background-repeat: no-repeat;
+    }
+    .about-us__description{
+      position: relative;
+      top: 1.5%;
+      left: 5%;
+      padding: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-right:52%;
+      background-color: #f1f1f166;
+    }
+    .bg__title{
+      font-size: 12px;
+      font-weight: 700;
+      padding-left: 1em;
+      color: var(--fontcolor-secundary);
+    }
+    .bg__text{
+      color: var(--fontcolor-secundary);
+      font-size: 10px;
+      line-height: 1.5em;
+      text-align: left;
+      padding: 1em 0 0 1em;
     }
     /* PÁGINA CONTATO */
     
