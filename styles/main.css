@@ -129,7 +129,48 @@
   text-decoration: none;
   cursor: pointer;
 }
-  
+
+/* PAGINA SOBRE NOS*/
+.about-us{
+  text-align: center;
+}
+.about-us__title{
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--click-color);
+  margin: 2em 0;
+}
+.about-us__bg{
+  background-image: url(../img/sonhe.jpg);
+  background-size: 100%;
+  height: 450px;
+  background-repeat: no-repeat;
+}
+.about-us__description{
+  position: relative;
+  top: 50%;
+  left: 5%;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-right:52%;
+  background-color: #f1f1f166;
+}
+.bg__title{
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 1em;
+  color: var(--fontcolor-secundary);
+}
+.bg__text{
+  color: var(--fontcolor-secundary);
+  font-size: 15px;
+  line-height: 1.5em;
+  text-align: left;
+  padding: 1em 0 0 1em;
+}
+
 /* PAGINA CONTATO  */ 
 
 .contact__link{
