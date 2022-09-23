@@ -5,10 +5,10 @@ Página de empresa fictícia usando:
 - CSS
 - JavaScript
 
-Estilizações usadas: 
+Conhecimentos aplicados: 
 - Display Flex
 - Display Grid
-- Responsivo 448px
+- Responsividade 
 
 Funções: 
 - Validação button 'Submit'
