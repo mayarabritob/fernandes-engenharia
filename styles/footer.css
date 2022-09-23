@@ -30,7 +30,8 @@
     width: 7%;
 }
 
-@media screen and (max-width: 448px) {
+@media screen and (min-width: 100px)
+  and (max-width: 946px) {
     .footer{
         display: block;
     }
@@ -41,11 +42,17 @@
         font-size: 14px;
         padding-top: 1em;
     }
+    .about__logo{
+        width: 10px;
+    }
+    .logo-socialmedia{
+        width: 20px;
+    }
     .about__text{
         font-size: 12px;
     }
     .footer__logo{
-        width: 40%;
+        width: 35%;
         padding-bottom: 1em;
         border-bottom: 1px solid var(--fontcolor-secundary);
     }

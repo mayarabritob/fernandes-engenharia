@@ -267,13 +267,15 @@
   transition: ease-in-out 0.2s all;
 }
 
-  @media screen and (max-width: 448px){
+  @media screen and (min-width: 100px)
+  and (max-width: 946px){
     .swiper{
-      height: 300px;
+      height: auto;
     }
     .container__portfolio{
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       margin: 1em;
     }
     .achitecture__title{
@@ -281,6 +283,7 @@
       font-size: 30px;
     }
     /* PAGINA PORTFOLIO*/
+
     .container__image:hover, .container__image{
       transition: none;
       filter: none;
@@ -293,8 +296,14 @@
     }
 
     /* PAGINA SOBRE NOS */
+    .about-us__title{
+      margin: 2em 0 .5em 0;
+    }
     .grid{
       border: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .grid__description{
       margin: 0 1em 2em 1em;
@@ -302,29 +311,35 @@
     .grid__image{
       width: 270px;
       height: auto;
-      position: relative;
-      right: 4em;
     }
     .relative{
-      position: relative;
+      display: flex;
+      justify-content: center;
+      text-align: center;
       right: 0;
+      margin: 0 20%;
     }
     .grid__title{
       font-size: 20px;
-      right: 2.5em;
       letter-spacing: 1px;
       padding: 5px 0;  
+      right: 0;
     }
     .grid__text{
       font-size: 10px;
-      padding: 2px 0;
+      padding: 2px 0 5px 0;
+      text-align: center;
     }
     .about-us__bg{
+      width: auto;
       height: auto;
+      background-size: cover;
     }
     .about-us__description{
-      top: 1.5%;
-      left: 5%;
+      position: none;
+      padding: 1em;
+      top: 10%;
+      overflow: hidden;
     }
     .bg__title{
       font-size: 12px;
@@ -342,4 +357,51 @@
       padding: .5em 6em; 
     }
     
+  }
+  @media screen and (min-width: 948px)
+  and (max-width: 1281px){
+    .grid__description{
+      margin: 0 1em 2em 1em;
+    }
+    .grid__image{
+      position: relative;
+      left: 10em;
+      width: 270px;
+      height: auto;
+    }
+    .relative{
+      right: 8em;
+      margin: 0 20%;
+    }
+    .grid__title{
+      font-size: 20px;
+      letter-spacing: 1px;
+      padding: 5px 0;  
+      right: 2em;
+    }
+    .grid__text{
+      font-size: 10px;
+    }
+    .about-us__bg{
+      width: auto;
+      height: auto;
+      background-size: cover;
+    }
+    .about-us__description{
+      position: none;
+      padding: 1em;
+      top: 10%;
+      overflow: hidden;
+    }
+    .bg__title{
+      font-size: 12px;
+    }
+    .bg__text{
+      font-size: 9px;
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    .swiper{
+      height: auto;
+    }
   }
